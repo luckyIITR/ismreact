@@ -1,0 +1,25 @@
+:root {
+    --color-black: #000000;
+    --color-dark: #232323;
+    --color-white: #ffffff;
+    --color-gray: #e7e7e7;
+    --color-cold-gray: #f0f1f6;
+    --color-light-gray: #666666;
+    --color-dark-gray: #999999;
+    --color-light-blue: #e5f0f7;
+    --color-medium-blue: #2980b9;
+    --color-dark-blue: #0067b3;
+    --color-yellow: #ffd53d;
+
+    --color-font: var(--color-dark);
+    --color-background: var(--color-white);
+    --color-background-gray: var(--color-gray);
+    --color-background-gray-cold: var(--color-cold-gray);
+    --color-background-dark: var(--color-dark);
+    --section-gradient-background: linear-gradient( 180deg, rgba(0, 103, 179, 0.8) 11.46%, #5183b8 32.29%, #5183b8 90.1%);
+
+    --font-family-segoe: 'Open Sans', Arial, Helvetica, sans-serif;
+    --font-family-lato: 'Lato', sans-serif, Arial, Helvetica;
+    --overlay-background: rgba(18, 18, 18, 0.4);
+    --overlay-backdrop-filter: blur(4px);
+}

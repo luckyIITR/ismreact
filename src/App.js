@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home'
+import Register from './components/Register'
+import Participants from "./components/Participants";
+import Noc from "./components/Noc";
+import Schedule from "./components/Schedule";
+import Contact from "./components/Contact";
+import './components/css/index.css'
+import './components/css/cms.min.css'
+import './components/css/global_variables.css'
+import './components/css/common.css'
+import './components/css/mainstyle.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+          <Switch>
+           <Route path="/" component={Home} exact/>
+            <Route path="/Register" component={Register} exact/>
+            <Route path="/Participants" component={Participants} exact/>
+            <Route path="/Noc" component={Noc} exact/>
+            <Route path="/Schedule" component={Schedule} exact/>
+            <Route path="/Contact" component={Contact} exact/>
+         </Switch>
+    </BrowserRouter>
+);
 }
 
 export default App;

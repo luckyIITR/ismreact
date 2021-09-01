@@ -1,0 +1,84 @@
+
+/* ------------------common in section----------------------------------------- */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* --------------------header section---------------------------------------- */
+
+
+.col-1 h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.footer form  .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+@media (max-width: 700px) {
+    .footer{
+        bottom: unset;
+    }
+    .footer .col-4{
+        flex-basis:  100%
+    }
+    
+    .footer .col-4:nth-child(2), .footer .col-4:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,72 @@
+.academicUnitsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.academicUnitsCard {
+    max-width: 300px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: 1fr / 70px 1fr;
+}
+
+.academicUnitsCardImage {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.academicUnitsCardText {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.academicUnitsCardTextNumber {
+    font-family: var(--font-family-lato);
+    font-size: 28px;
+    line-height: 34px;
+    color: #ffffff;
+}
+
+.academicUnitsCardTextHeader {
+    font-family: var(--font-family-lato);
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.academicUnitsCardTextHeaderContent {
+    padding-right: 10px;
+}
+
+.academicUnitsCardTextDescription {
+    font-family: var(--font-family-segoe);
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFFB2;
+    margin: 20px 0 30px 0;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .academicUnitsContainer {
+        display: block;
+    }
+
+    .academicUnitsCard {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .academicUnitsCardTextDescription {
+        margin: 10px 0 30px 0;
+    }
+    
+}
