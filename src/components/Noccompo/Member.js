@@ -9,7 +9,7 @@ function Member(props) {
                 <div className="row">
                     <div className="data">
                         <p className="name">{props.props.name}</p>
-                        {props.props.from}
+                        <div style={{fontSize:'0.9em'}}>{props.props.from}</div>
                     </div>
                 </div>
             </a>

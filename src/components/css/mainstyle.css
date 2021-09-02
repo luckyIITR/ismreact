@@ -476,6 +476,10 @@ a {
 .data{
     padding: 1em;
 }
+.NOC .data{
+    padding: 0.3em;
+}
+
 .data a {color:#1a76bb;}
 
 
@@ -486,6 +490,11 @@ a {
   
   }
   
+.NOC .main-page-noticeboard{
+    padding: 3px;
+    margin-top: 5px
+}
+
   .upcoming-events-container {
     flex-basis: 30%;
   }
@@ -877,7 +886,7 @@ tr:hover {
 /* -------------NOC---------- */
 
 .name{
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: bold;
     color: black;
     padding-bottom: .5em;
