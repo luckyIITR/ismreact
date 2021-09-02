@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-./src/components/Participantscompo/client_secret.json
-./src/components/Registercompo/client_secret.json
+/src/components/Participantscompo/client_secret.json
+/src/components/Registercompo/client_secret.json
