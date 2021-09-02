@@ -13,13 +13,13 @@ function EventDetails() {
 
                             <div className="data">
                                 The International Workshop ISM2021 is the Tenth in a series of biennial Indian Strings
-                                Meetings, of which the first was held at Allahabad in December 2002;
-                                <a href="http://theory.tifr.res.in/~ism04/">second</a> at Khajuraho, in December 2004;
-                                third at Puri, in December 2006;
-                                <a href="http://www.imsc.res.in/~ism08/index.html">fourth</a> at Pondicherry, in December 2008;
+                                Meetings, of which the first was held at Allahabad in December 2002;&nbsp;
+                                <a href="http://theory.tifr.res.in/~ism04/">second</a> at Khajuraho, in December 2004;&nbsp;
+                                third at Puri, in December 2006;&nbsp;
+                                <a href="http://www.imsc.res.in/~ism08/index.html">fourth</a> at Pondicherry, in December 2008;&nbsp;
                                 <a href="http://www.iopb.res.in/~ism2011/">fifth</a> in January 2011,
-                                sixth in December 2012,
-                                <a href="http://www.imsc.res.in/~ism14/index.html">seventh</a> in December 2014, at Puri;
+                                sixth in December 2012,&nbsp;
+                                <a href="http://www.imsc.res.in/~ism14/index.html">seventh</a> in December 2014, at Puri;&nbsp;
                                 <a href="https://www.iiserpune.ac.in/~ism16/">eighth</a> at IISER Pune in December 2016; and
                                 ninth at IISER Thiravananthapuram in December 2018.
                                 These meetings are jointly organized by the Indian string theory community.
@@ -39,13 +39,9 @@ function EventDetails() {
                             <div className="data">
                                 <h3 style={{fontSize: "1.5em"}}>Meeting Dates<br /></h3>
                                 <br />
-                                December XX, 20XX to <br />
-                                December XX, 20XX<br />
+                                December 12 - 17, 2021<br />
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>

@@ -21,7 +21,8 @@ function AboutIIT() {
                         importance in higher technological education and in engineering, basic and applied research.
                         Since its establishment, the Institute has played a vital role in providing the technical
                         manpower and know-how to the country and in pursuit of research. The Institute ranks amongst the
-                        best technological institutions in the world and has contributed to all sectors of technological
+                        best technological institutions in the country
+                        and has contributed to all sectors of technological
                         development. It has also been considered a trend-setter in the area of education and research in
                         the field of science, technology, and engineering.
                     </div>

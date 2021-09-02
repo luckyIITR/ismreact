@@ -30,8 +30,8 @@ function Form() {
                     <div className="input-group">
                         <select name="Post" id="cars" required>
                             <option value="DEFAULT" selected disabled>- Select a category -</option>
-                            <option value="Ph.D. Student">Ph.D. Student</option>
-                            <option value="Post Doc">Post Doc</option>
+                            <option value="Student">Student</option>
+                            <option value="Post Doc.">Post Doc.</option>
                             <option value="Faculty">Faculty</option>
                         </select>
                     </div>

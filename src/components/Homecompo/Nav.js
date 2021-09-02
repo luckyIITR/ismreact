@@ -15,7 +15,7 @@ function Nav(props) {
                                 <li><Link to="/Participants">PARTICIPANTS</Link></li>
                                 <li><Link to="/Noc">NOC</Link></li>
                                 <li><Link to="/Schedule">SCHEDULE et al</Link></li>
-                                <li><Link to="/Contact">Contact</Link></li>
+                                <li><Link to="/Contact">CONTACT</Link></li>
                             </ul>
                         </div>
                     </nav>
