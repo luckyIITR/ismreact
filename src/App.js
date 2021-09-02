@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home'
 import Register from './components/Register'
 import Participants from "./components/Participants";
@@ -14,7 +14,7 @@ import './components/css/mainstyle.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
           <Switch>
            <Route path="/" component={Home} exact/>
             <Route path="/Register" component={Register} exact/>
@@ -23,7 +23,7 @@ function App() {
             <Route path="/Schedule" component={Schedule} exact/>
             <Route path="/Contact" component={Contact} exact/>
          </Switch>
-    </BrowserRouter>
+    </HashRouter>
 );
 }
 
