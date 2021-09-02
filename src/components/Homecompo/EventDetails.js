@@ -12,7 +12,7 @@ function EventDetails() {
                         <div className="row">
 
                             <div className="data">
-                                The International Workshop ISM2021 is the Tenth in a series of biennial Indian Strings
+                                The International meeting on strings ISM2021 is the Tenth in a series of biennial Indian Strings
                                 Meetings, of which the first was held at Allahabad in December 2002;&nbsp;
                                 <a href="http://theory.tifr.res.in/~ism04/">second</a> at Khajuraho, in December 2004;&nbsp;
                                 third at Puri, in December 2006;&nbsp;
