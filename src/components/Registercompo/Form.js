@@ -2,6 +2,47 @@ import React from 'react';
 import Footer from "../Homecompo/Footer";
 
 function Form() {
+
+    const google  = async (e) => {
+
+        const btn = document.getElementById('btn');
+        const btnText = document.getElementById('btnText');
+        btnText.innerHTML = "Thanks";
+        btn.classList.add('active');
+
+        e.preventDefault()
+
+        async function accessSpread(){
+
+            const creds = require('../client_secret.json'); // the file saved above
+            const doc = new GoogleSpreadsheet('1XObBBFssSCgUnWuI4qEfjjzPcE2Na9rN_uRUhkB2glY');
+            await doc.useServiceAccountAuth(creds);
+
+            await doc.loadInfo(); // loads document properties and worksheets
+            console.log(doc.title);
+
+            const sheet = doc.sheetsByIndex[0]
+            const form = document.forms['google-sheet'];
+            const formdata = new FormData(form);
+
+
+            await sheet.addRow({ Name: formdata.get('Name'),
+                Email: formdata.get('Email'),
+                Institute:formdata.get('Institute') ,
+                Post: formdata.get('Post') });
+        }
+
+        accessSpread()
+        .then(response => {
+                document.getElementById('name').value = ""
+                document.getElementById('email').value = ""
+                document.getElementById('institute').value = ""
+                document.getElementById('post').value = 'DEFAULT'})
+            .catch(error => console.error('Error!', error.message))
+
+    }
+
+
     return (
         <div style={{background: "rgb(246 253 255)"}}>
             <div className="hero">

@@ -10,7 +10,7 @@ function Table() {
     const accessSpread = async () => {
 
         try {
-            const creds = require('./client_secret.json'); // the file saved above
+            const creds = require('../client_secret.json'); // the file saved above
             const doc = new GoogleSpreadsheet('1XObBBFssSCgUnWuI4qEfjjzPcE2Na9rN_uRUhkB2glY');
             await doc.useServiceAccountAuth(creds);
 
@@ -43,42 +43,43 @@ function Table() {
 
     return (
         <div style={{ background: "rgb(246 253 255)" }}>
-            {
-                !(data.length) ?
+            <div className="table-content">
+                <div className="register-heading sectionHeading">
+                    Participants
+                    <br />
+                    <br />
+                </div>
+                <div className="table">
+                    <table>
+                        <thead>
+                            <tr id="header"> 
+                                <th>S.No.</th>
+                                <th>Name</th>
+                                <th>Student/faculty</th>
+                                <th>Institute</th>
+                            </tr>
+                        </thead>
+                        {
+                            !(data.length) ?
 
-                    (<div className="table-content">
-                        <div className="register-heading sectionHeading">
-                            Participants
-                            <br />
-                            <br />
-                        </div>
-                        <div className="table" id='preloader'>
-                            <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
-                        </div>
-                    </div>)
-                    :
-                    (<div className="table-content">
-                        <div className="register-heading sectionHeading">
-                            Participants
-                            <br />
-                            <br />
-                        </div>
-                        <div className="table" >
-                            <table>
-                                <tr id="header">
-                                    <th>S.No.</th>
-                                    <th>Name</th>
-                                    <th>Student/faculty</th>
-                                    <th>Institute</th>
-                                </tr>
-                            {data.map((value, index) => {
-                                    return <Row key={index} props={{ index: index, row: value }} />
-                                })}
-                            </table>
-                        </div>
-                    </div>)
+                                (
+                                    <tbody className="table" id='preloader' style={{height:'30vh'}}>
+                                        <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
+                                    </tbody>
+                                )
+                                :
+                                (
+                                    <tbody className="table" id='preloader'>
+                                        {data.map((value, index) => {
+                                            return <Row key={index} props={{ index: index, row: value }} />
+                                        })}
+                                    </tbody>
+                                )
 
-            }
+                        }
+                    </table>
+                </div>
+            </div>
             <Footer />
         </div>
     )

@@ -1001,5 +1001,13 @@ tr:hover {
 
 
 .css-1cqp065 > *{
-    left: -60px !important;
+    top: 3em !important;
+    left: 16em !important;
+}
+
+@media screen and (max-width:700px) {
+    .css-1cqp065 > *{
+        top: 2em !important;
+        left: 3em !important;
+    }
 }
