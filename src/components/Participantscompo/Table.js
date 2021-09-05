@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import Row from "./Row";
-import Footer from "../Homecompo/Footer";
+const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 
 function Table() {
@@ -42,45 +42,42 @@ function Table() {
 
 
     return (
-        <div style={{ background: "rgb(246 253 255)" }}>
-            <div className="table-content">
-                <div className="register-heading sectionHeading">
-                    Participants
-                    <br />
-                    <br />
-                </div>
-                <div className="table">
-                    <table>
-                        <thead>
-                            <tr id="header"> 
-                                <th>S.No.</th>
-                                <th>Name</th>
-                                <th>Student/faculty</th>
-                                <th>Institute</th>
-                            </tr>
-                        </thead>
-                        {
-                            !(data.length) ?
-
-                                (
-                                    <tbody className="table" id='preloader' style={{height:'30vh'}}>
-                                        <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
-                                    </tbody>
-                                )
-                                :
-                                (
-                                    <tbody className="table" id='preloader'>
-                                        {data.map((value, index) => {
-                                            return <Row key={index} props={{ index: index, row: value }} />
-                                        })}
-                                    </tbody>
-                                )
-
-                        }
-                    </table>
-                </div>
+        <div className="table-content">
+            <div className="register-heading sectionHeading">
+                Participants
+                <br />
+                <br />
             </div>
-            <Footer />
+            <div className="table">
+                <table>
+                    <thead>
+                        <tr id="header">
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Student/faculty</th>
+                            <th>Institute</th>
+                        </tr>
+                    </thead>
+                    {
+                        !(data.length) ?
+
+                            (
+                                <tbody className="table" id='preloader' style={{ height: '30vh' }}>
+                                    <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
+                                </tbody>
+                            )
+                            :
+                            (
+                                <tbody className="table" id='preloader'>
+                                    {data.map((value, index) => {
+                                        return <Row key={index} props={{ index: index, row: value }} />
+                                    })}
+                                </tbody>
+                            )
+
+                    }
+                </table>
+            </div>
         </div>
     )
 }
