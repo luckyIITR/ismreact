@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import Row from "./Row";
-const { GoogleSpreadsheet } = require('google-spreadsheet');
+
+const {GoogleSpreadsheet} = require('google-spreadsheet');
 
 
 function Table() {
@@ -22,7 +23,7 @@ function Table() {
             const rows = await sheet.getRows();
             const temp = []
 
-            for (let i = rows.length-1; i >= 0; i--) {
+            for (let i = rows.length - 1; i >= 0; i--) {
                 const data_row = {}
                 data_row['name'] = rows[i].Name
                 data_row['post'] = rows[i].Post
@@ -39,45 +40,56 @@ function Table() {
         accessSpread()
         // eslint-disable-next-line
     }, [])
-
-
+    //
+    // <th>S.No.</th>
+    // <th>Name</th>
+    // <th>Student/faculty</th>
+    // <th>Institute</th>
     return (
-        <div className="table-content">
-            <div className="register-heading sectionHeading">
-                Participants
-                <br />
-                <br />
-            </div>
-            <div className="table">
-                <table>
-                    <thead>
-                        <tr id="header">
-                            <th>S.No.</th>
-                            <th>Name</th>
-                            <th>Student/faculty</th>
-                            <th>Institute</th>
-                        </tr>
-                    </thead>
-                    {
-                        !(data.length) ?
+        <div className="limiter">
+            <div className="container-table100">
+                <div className="wrap-table100">
+                    <div className="table">
+                        <div className="row-table header">
+                            <div className="cell">
+                                S.No.
+                            </div>
+                            <div className="cell">
+                                Name
+                            </div>
+                            <div className="cell">
+                                Student/Faculty
+                            </div>
+                            <div className="cell">
+                                Institution
+                            </div>
+                        </div>
 
-                            (
-                                <tbody className="table" id='preloader' style={{ height: '30vh' }}>
-                                    <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
-                                </tbody>
-                            )
-                            :
-                            (
-                                <tbody className="table" id='preloader'>
-                                    {data.map((value, index) => {
-                                        return <Row key={index} props={{ index: data.length - index - 1 , row: value }} />
-                                    })}
-                                </tbody>
-                            )
-                    }
-                </table>
+                        {
+                            !(data.length) ?
+
+                                (
+                                    <div className="table" id='preloader' style={{height: '30vh'}}>
+                                        <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
+                                    </div>
+                                )
+                                :
+                                (
+                                    <div>
+                                        {
+                                            data.map((value, index) => {
+                                                return <Row key={index}
+                                                            props={{index: data.length - index - 1, row: value}}/>
+                                            })
+                                        }
+                                    </div>
+                                )
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
+
 export default Table;
