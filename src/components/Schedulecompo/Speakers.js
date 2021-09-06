@@ -3,6 +3,31 @@ import RingLoader from "react-spinners/RingLoader";
 import Speaker from "./Speaker";
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
+function SortNames(data){
+    for (let j=0; j<data.length; j++){
+        let splited = data[j].name.split(" ")
+        data[j]['last_name'] = splited[splited.length - 1]
+    }
+
+    function compareObjects(object1, object2, key) {
+        const obj1 = object1[key].toUpperCase()
+        const obj2 = object2[key].toUpperCase()
+
+        if (obj1 < obj2) {
+            return -1
+        }
+        if (obj1 > obj2) {
+            return 1
+        }
+        return 0
+    }
+
+    data.sort((book1, book2) => {
+        return compareObjects(book1, book2, 'last_name')
+    })
+}
+
+
 function Speakers() {
 
     const [data, setData] = useState([])
@@ -31,6 +56,8 @@ function Speakers() {
                 data_row['file'] = rows[i].File
                 temp.push(data_row)
             }
+            SortNames(temp)
+
             setData(temp)
         } catch (err) {
             console.error(err.message)

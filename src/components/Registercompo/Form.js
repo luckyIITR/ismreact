@@ -67,7 +67,7 @@ function Form() {
 
                 <div className="input-group">
                     <input type="text" name="Institute" id="institute" required />
-                    <label htmlFor="institute"><i className="fas fa-university"> </i> Institute</label>
+                    <label htmlFor="institute"><i className="fas fa-university"> </i> Institution</label>
                 </div>
 
                 <div className="input-group">

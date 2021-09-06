@@ -9,7 +9,8 @@ function Speaker(props) {
                     <div className="sch-row">
                         <div className="sch-col-1">
                             <p className="sch-name">
-                                <a href={props.props.page} target={'_blank'} rel="noopener noreferrer">{props.props.name}</a>
+                                <a href={props.props.page} target={'_blank'}
+                                    rel="noopener noreferrer">{props.props.name}</a>
                             </p>
                         </div>
                         {props.props.time &&
@@ -26,14 +27,16 @@ function Speaker(props) {
                                 {(props.props.file || props.props.youtube) &&
                                     <div style={{ display: "flex", flexWrap: "wrap" }}>
                                         <div className="lect">
-                                            <a className="ui button outline lifeAtIITRButton" href={props.props.file} target={'_blank'} rel="noopener noreferrer"><i
-                                                className="fas fa-file-pdf"
-                                                style={{ color: "red" }}> </i>&nbsp;&nbsp; Lecture File</a>
+                                            <a className="ui button outline lifeAtIITRButton" href={props.props.file} target={'_blank'}
+                                                rel="noopener noreferrer"><i
+                                                    className="fas fa-file-pdf"
+                                                    style={{ color: "red" }}> </i>&nbsp;&nbsp; Lecture File</a>
                                         </div>
                                         <div className="lect">
-                                            <a className="ui button outline lifeAtIITRButton" href={props.props.youtube} target={'_blank'} rel="noopener noreferrer"><i
-                                                className="fab fa-youtube"
-                                                style={{ color: "red" }}> </i>&nbsp;&nbsp; YouTube</a>
+                                            <a className="ui button outline lifeAtIITRButton" href={props.props.youtube}
+                                                target={'_blank'} rel="noopener noreferrer"><i
+                                                    className="fab fa-youtube"
+                                                    style={{ color: "red" }}> </i>&nbsp;&nbsp; YouTube</a>
                                         </div>
                                     </div>
                                 }

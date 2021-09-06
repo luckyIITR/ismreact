@@ -26,7 +26,6 @@ function AboutIIT() {
                         development. It has also been considered a trend-setter in the area of education and research in
                         the field of science, technology, and engineering.
                     </div>
-
                 </div>
             </div>
 

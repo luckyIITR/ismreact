@@ -22,7 +22,7 @@ function Table() {
             const rows = await sheet.getRows();
             const temp = []
 
-            for (let i = 0; i < rows.length; i++) {
+            for (let i = rows.length-1; i >= 0; i--) {
                 const data_row = {}
                 data_row['name'] = rows[i].Name
                 data_row['post'] = rows[i].Post
