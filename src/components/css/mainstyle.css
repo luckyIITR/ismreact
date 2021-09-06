@@ -845,6 +845,7 @@ table {
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 tr {
@@ -858,6 +859,16 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+
+tr :first-child{
+    padding-left: 1.5em !important;
+}
+
+tr :last-child{
+    padding-right: 2.5em !important;
+}
+
 
 #header {
     background-color: #00093c;

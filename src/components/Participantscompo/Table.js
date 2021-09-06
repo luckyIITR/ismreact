@@ -70,11 +70,10 @@ function Table() {
                             (
                                 <tbody className="table" id='preloader'>
                                     {data.map((value, index) => {
-                                        return <Row key={index} props={{ index: index, row: value }} />
+                                        return <Row key={index} props={{ index: data.length - index - 1 , row: value }} />
                                     })}
                                 </tbody>
                             )
-
                     }
                 </table>
             </div>
