@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import Row from "./Row";
 
-const { GoogleSpreadsheet } = require('google-spreadsheet');
+const {GoogleSpreadsheet} = require('google-spreadsheet');
 
 
 function Table() {
@@ -47,39 +47,45 @@ function Table() {
     // <th>Institute</th>
     return (
         <div className="limiter">
-            <div className="register-heading sectionHeading participants">
-                Participants
-                <br />
-                <br />
-            </div>
             <div className="container-table100">
                 <div className="wrap-table100">
-
-                    {
-                        !(data.length) ?
-
-                            (<div className="table">
-                                <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
+                    <div className="table">
+                        <div className="row-table header">
+                            <div className="cell">
+                                S.No.
                             </div>
-                            )
-                            :
-                            (
-                                <div className="table">
-                                    <div className="header-table">
-                                        <div className="cell">S.No.</div>
-                                        <div className="cell">Name</div>
-                                        <div className="cell">Student/Faculty</div>
-                                        <div className="cell">Institution</div>
+                            <div className="cell">
+                                Name
+                            </div>
+                            <div className="cell">
+                                Student/Faculty
+                            </div>
+                            <div className="cell">
+                                Institution
+                            </div>
+                        </div>
+
+                        {
+                            !(data.length) ?
+
+                                (
+                                    <div className="table" id='preloader' style={{height: '30vh'}}>
+                                        <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
                                     </div>
-                                    {
-                                        data.map((value, index) => {
-                                            return <Row key={index}
-                                                props={{ index: data.length - index - 1, row: value }} />
-                                        })
-                                    }
-                                </div>
-                            )
-                    }
+                                )
+                                :
+                                (
+                                    <div>
+                                        {
+                                            data.map((value, index) => {
+                                                return <Row key={index}
+                                                            props={{index: data.length - index - 1, row: value}}/>
+                                            })
+                                        }
+                                    </div>
+                                )
+                        }
+                    </div>
                 </div>
             </div>
         </div>
