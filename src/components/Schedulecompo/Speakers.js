@@ -58,6 +58,8 @@ function Speakers() {
             }
             SortNames(temp)
 
+            temp.push({name:'Shiraz Minwalla *', page : 'http://qst.theory.tifr.res.in/StringTheoryStud/faculty1.php', institute : 'TIFR  Mumbai'})
+
             setData(temp)
         } catch (err) {
             console.error(err.message)
@@ -85,6 +87,7 @@ function Speakers() {
                                 {data.map((value, index) => {
                                     return <Speaker key={index} props={value} />
                                 })}
+                                    <div style={{marginTop:'20px', fontWeight:'bold'}}>* to be confirmed</div>
                             </div>
                             )
                     }
