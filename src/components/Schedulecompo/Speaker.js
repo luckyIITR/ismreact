@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Speaker(props) {
-    console.log(props)
     return (
         <div className="main-page-noticeboard">
             <div className="row">
