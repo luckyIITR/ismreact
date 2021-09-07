@@ -47,6 +47,11 @@ function Table() {
     // <th>Institute</th>
     return (
         <div className="limiter">
+            <div className="register-heading sectionHeading participants">
+                Participants
+                <br />
+                <br />
+            </div>
             <div className="container-table100">
                 <div className="wrap-table100">
 
@@ -59,7 +64,7 @@ function Table() {
                             :
                             (
                                 <div className="table">
-                                    <div className="row-table header">
+                                    <div className="row-table header-table">
                                         <div className="cell">
                                             S.No.
                                         </div>
