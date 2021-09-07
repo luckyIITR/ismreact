@@ -59,7 +59,6 @@ function Speakers() {
             }
             SortNames(temp)
 
-            temp.push({name:'Shiraz Minwalla *', page : 'https://www.infosys-science-foundation.com/prize/laureates/2013/shiraz-naval-minwalla.asp', institute : 'TIFR  Mumbai'})
 
             setData(temp)
         } catch (err) {
