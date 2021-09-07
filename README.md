@@ -1,6 +1,4 @@
-# Website
-
-## Official website 
+# Official website 
 ## Indian Strings Meeting 2021 
 
 ## 9th in a series of biennial ISMs jointly organized by the Indian string theory community, at IIT Roorkee.
