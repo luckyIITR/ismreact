@@ -49,43 +49,39 @@ function Table() {
         <div className="limiter">
             <div className="container-table100">
                 <div className="wrap-table100">
-                    <div className="table">
-                        <div className="row-table header">
-                            <div className="cell">
-                                S.No.
-                            </div>
-                            <div className="cell">
-                                Name
-                            </div>
-                            <div className="cell">
-                                Student/Faculty
-                            </div>
-                            <div className="cell">
-                                Institution
-                            </div>
-                        </div>
 
-                        {
-                            !(data.length) ?
+                    {
+                        !(data.length) ?
 
-                                (
-                                    <div className="table" id='preloader' style={{height: '30vh'}}>
-                                        <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
+                            (
+                                <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
+                            )
+                            :
+                            (
+                                <div className="table">
+                                    <div className="row-table header">
+                                        <div className="cell">
+                                            S.No.
+                                        </div>
+                                        <div className="cell">
+                                            Name
+                                        </div>
+                                        <div className="cell">
+                                            Student/Faculty
+                                        </div>
+                                        <div className="cell">
+                                            Institution
+                                        </div>
                                     </div>
-                                )
-                                :
-                                (
-                                    <div>
-                                        {
-                                            data.map((value, index) => {
-                                                return <Row key={index}
-                                                            props={{index: data.length - index - 1, row: value}}/>
-                                            })
-                                        }
-                                    </div>
-                                )
-                        }
-                    </div>
+                                    {
+                                        data.map((value, index) => {
+                                            return <Row key={index}
+                                                        props={{index: data.length - index - 1, row: value}}/>
+                                        })
+                                    }
+                                </div>
+                            )
+                    }
                 </div>
             </div>
         </div>
