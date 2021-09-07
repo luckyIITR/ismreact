@@ -835,6 +835,9 @@ hr{
     justify-content:center;
     flex-wrap:wrap;
 }
+.wrap-table100::-webkit-scrollbar {
+    display: none;
+  }
 .wrap-table100 {
     width:960px;
     border-radius:10px;
@@ -845,22 +848,22 @@ hr{
     width:100%;
     display:table;
     margin:0;
-
+    border-collapse: collapse;
 }
 
 .row-table {
     display:table-row;
-    background:#fff
+    background-color:rgba(229, 238, 244, 0.49);
+    border-top: 2px solid white;
 }
 
 .header-table{
+    display:table-row;
+    z-index: 9999;
     position: sticky;
     top: 0;
-}
-
-.row-table.header-table {
     color:#fff;
-    background:#6c7ae0
+    background-color:#00093c;
 }
 
 .cell {
@@ -877,7 +880,7 @@ hr{
     padding-bottom:20px;
     border-bottom:1px solid #f2f2f2
 }
-.row-table.header-table .cell {
+.header-table .cell {
     font-family:Poppins-Regular;
     font-size:18px;
     color:#fff;
@@ -886,7 +889,7 @@ hr{
     padding-top:19px;
     padding-bottom:19px
 }
-.row-table .cell:nth-child(1) {
+.row-table .cell:nth-child(1), .header-table .cell:nth-child(1) {
     width:56px;
     padding-left:10px;
     padding-right: 10px;
@@ -906,19 +909,25 @@ hr{
     width:100%!important
 }
 .row-table:hover {
-    background-color:#ececff;
-    cursor:pointer
+    background-color:#88b1ee42;
+    cursor:pointer;
+    z-index: 0;
+    position: relative;
+}
+.header-table:hover{
+    background-color:#3f577c;
+    cursor:pointer;
 }
 @media(max-width:768px) {
 
     .row-table {
         display:block
     }
-    .row-table.header-table {
+    .header-table {
         padding:0;
         height:0
     }
-    .row-table.header-table .cell {
+    .header-table .cell {
         display:none
     }
     .row-table .cell:before {
@@ -940,8 +949,8 @@ hr{
     }
     .row-table {
         border-bottom:1px solid #f2f2f2;
-        padding-bottom:18px;
-        padding-top:30px;
+        padding-bottom:15px;
+        padding-top:15px;
         padding-right:15px;
         margin:0
     }
@@ -1092,12 +1101,12 @@ hr{
 
 .css-1cqp065 > *{
     top: 3em !important;
-    left: 16em !important;
+    left: 25em !important;
 }
 
 @media screen and (max-width:700px) {
     .css-1cqp065 > *{
         top: 2em !important;
-        left: 3em !important;
+        left: 6.5em !important;
     }
 }

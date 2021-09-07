@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import Row from "./Row";
 
-const {GoogleSpreadsheet} = require('google-spreadsheet');
+const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 
 function Table() {
@@ -58,30 +58,23 @@ function Table() {
                     {
                         !(data.length) ?
 
-                            (
-                                <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
+                            (<div className="table">
+                                <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
+                            </div>
                             )
                             :
                             (
                                 <div className="table">
-                                    <div className="row-table header-table">
-                                        <div className="cell">
-                                            S.No.
-                                        </div>
-                                        <div className="cell">
-                                            Name
-                                        </div>
-                                        <div className="cell">
-                                            Student/Faculty
-                                        </div>
-                                        <div className="cell">
-                                            Institution
-                                        </div>
+                                    <div className="header-table">
+                                        <div className="cell">S.No.</div>
+                                        <div className="cell">Name</div>
+                                        <div className="cell">Student/Faculty</div>
+                                        <div className="cell">Institution</div>
                                     </div>
                                     {
                                         data.map((value, index) => {
                                             return <Row key={index}
-                                                        props={{index: data.length - index - 1, row: value}}/>
+                                                props={{ index: data.length - index - 1, row: value }} />
                                         })
                                     }
                                 </div>
