@@ -14,7 +14,7 @@ function Nav(props) {
                                 <li><Link to="/Register">REGISTER</Link></li>
                                 <li><Link to="/Participants">PARTICIPANTS</Link></li>
                                 <li><Link to="/Noc">NOC</Link></li>
-                                <li><Link to="/Schedule">SCHEDULE et al</Link></li>
+                                <li><Link to="/Schedule">SPEAKERS et al</Link></li>
                                 <li><Link to="/Contact">CONTACT</Link></li>
                             </ul>
                         </div>
