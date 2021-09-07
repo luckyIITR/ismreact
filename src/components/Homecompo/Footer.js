@@ -18,7 +18,7 @@ function Footer() {
                 </div>
 
                 <div className="col-3">
-                    <a href="https://github.com/luckyIITR/ISM2021" rel="noopener noreferrer" target="_blank" ><img src={ismlogo} alt="" className="logo2" /></a>
+                    <a href="https://github.com/luckyIITR/ismreact" rel="noopener noreferrer" target="_blank" ><img src={ismlogo} alt="" className="logo2" /></a>
                     <div className="tooltip">
                         Designed and developed by Lucky, Shubham, Mohak.<br />
                         IMSc. Physics 2024, IIT Roorkee.
