@@ -131,10 +131,7 @@ nav a{
 }
 
 nav ul {
-    margin: 0px;
-    padding: 0px;
     width: 100%;
-    margin: 0 auto
 }
 
 nav li {
@@ -146,13 +143,11 @@ nav li {
 }
 nav li a {
     display: block;
-    padding: 5px;
-    padding-bottom: 6px;
-    background-position: 0px 0px;
+    padding: 5px 5px 6px;
 }
 nav li a:hover,
 nav li.active a {
-    background-position: 0px -36px;
+    background-position: 0 -36px;
     background-color: #F0F1F6;
 }
 
@@ -166,12 +161,15 @@ nav ul li a:hover {
 @media screen and (max-width: 700px) {
    
     nav ul li {
-        display: block !important;
-        
+        display: block;
     }
 
+    nav ul :nth-child(5){
+        display: inline;
+    }
+
+
     .logoImage {
-        
         margin-bottom: 40px;
     }
     
@@ -207,8 +205,7 @@ nav ul li a:hover {
     }
     .fa-times{
         color: white !important;
-        padding: 20px;
-        padding-top: 30px;
+        padding: 30px 20px 20px;
     }
 }
 
@@ -244,16 +241,16 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     justify-content: center;
-    /* border: 2px solid red; */
     line-height: 1;
 }
 
 .text-box a{
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .text-box h1 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 4em;
     font-weight: bold;
 }
@@ -310,6 +307,8 @@ a {
 
     .text-box a{
         margin-top: 120px;
+        margin-bottom: 0;
+
     }
 
     .text-box{
@@ -379,7 +378,7 @@ a {
   .main-page-noticeboard  .seperator {
     border: 1px solid rgba(26, 118, 187, 0.6);
     background-color: rgba(26, 118, 187, 0.6);
-    height: .5px;
+    height: 0.5px;
   }
   
   .main-page-upcoming-events {
@@ -388,7 +387,7 @@ a {
   }
   
   .main-page-upcoming-events .row {
-    margin: 5px 0px;
+    margin: 5px 0;
     display: flex;
     text-decoration: none !important;
     color: #232323 !important;
@@ -398,7 +397,7 @@ a {
     width: 72px;
     height: 72px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 4px rgba(134, 134, 134, 0.2);
+    box-shadow: 0 0 4px rgba(134, 134, 134, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -585,7 +584,7 @@ a {
     bottom: 0;
     background: linear-gradient(to right, #00093c, #2d0b00) ;
     color: #fff;
-    padding: 0px 5px;
+    padding: 0 5px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -683,9 +682,9 @@ hr{
 
 .hero{
     width: 100%;
-    height: 80vh;
+    height: 600px;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -821,9 +820,11 @@ hr{
 
 .limiter {
     width:100%;
-    margin:0 auto
+    margin:0 auto;
+    font-family: var(--font-family-lato);
 }
 .container-table100 {
+    font-family: var(--font-family-lato);
     width:100%;
     padding-bottom: 150px;
     margin-top: 50px;
@@ -845,6 +846,7 @@ hr{
     overflow-y: auto;
 }
 .table {
+    font-family: var(--font-family-lato);
     width:100%;
     display:table;
     margin:0;
@@ -858,8 +860,9 @@ hr{
 }
 
 .header-table{
+    font-family: var(--font-family-lato);
     display:table-row;
-    z-index: 9999;
+    z-index: 999;
     position: sticky;
     top: 0;
     color:#fff;
@@ -871,8 +874,8 @@ hr{
 }
 
 .row-table .cell {
-    font-family:Poppins-Regular;
-    font-size:15px;
+    font-family: var(--font-family-lato);
+    font-size:18px;
     color:#666;
     line-height:1.2;
     font-weight:unset!important;
@@ -881,7 +884,6 @@ hr{
     border-bottom:1px solid #f2f2f2
 }
 .header-table .cell {
-    font-family:Poppins-Regular;
     font-size:18px;
     color:#fff;
     line-height:1.2;
@@ -931,7 +933,6 @@ hr{
         display:none
     }
     .row-table .cell:before {
-        font-family:Poppins-Bold;
         font-size:12px;
         color:gray;
         line-height:1.2;
@@ -964,7 +965,6 @@ hr{
         padding-left:30px
     }
     .row-table .cell {
-        font-family:Poppins-Regular;
         font-size:18px;
         color:#555;
         line-height:1.2;

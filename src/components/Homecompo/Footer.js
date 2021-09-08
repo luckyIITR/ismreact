@@ -11,7 +11,7 @@ function Footer() {
                 </div>
 
                 <div className="col-2">
-                    <h2>Indian Institute of Technology, Roorkee</h2>
+                    <h2 style={{lineHeight:'30px'}}>Indian Institute of Technology, Roorkee</h2>
                     <span>
                         Indian Strings Meeting 2021
                     </span>
@@ -20,8 +20,8 @@ function Footer() {
                 <div className="col-3">
                     <a href="https://github.com/luckyIITR/ismreact" rel="noopener noreferrer" target="_blank" ><img src={ismlogo} alt="" className="logo2" /></a>
                     <div className="tooltip">
-                        Designed and developed by Lucky, Shubham, Mohak.<br />
-                        IMSc. Physics 2024, IIT Roorkee.
+                        Website and Logo Designed and developed by Lucky, Shubham, Mohak.<br />
+                        Int. M.Sc. Physics 2024, IIT Roorkee.
                     </div>
                 </div>
             </div>
