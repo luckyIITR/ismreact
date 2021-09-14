@@ -223,8 +223,8 @@ nav ul li a:hover {
     width: 100%;
     background: linear-gradient(rgba(4, 9, 30, 0.35), rgba(4, 9, 30, 0.35)), url(../images/M4.jpg) no-repeat;
     background-position: center;
-    /* background-size: cover; */
-    /* position: relative; */
+     background-size: cover;
+     /*position: relative;*/
 }
 .slideFixed {
     padding-top: 600px !important;
@@ -292,6 +292,13 @@ a {
         margin-top: 180px;
     }
 }
+
+@media (max-width: 996px){
+    .text-box h1{
+        font-size: 3em;
+    }
+}
+
 
 
 @media (max-width: 700px) {
