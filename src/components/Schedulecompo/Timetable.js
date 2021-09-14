@@ -48,7 +48,7 @@ function Timetable() {
                                     <td>Talk</td>
                                     <td>Talk</td>
                                 </tr>
-                                <tr style={{background: "rgba(229, 238, 244, 0.6)"}}>
+                                <tr style={{background: "#b1e48c"}}>
                                     <th scope="row">11:00-11:30</th>
                                     <td colSpan="6">Tea Break</td>
 
@@ -73,7 +73,7 @@ function Timetable() {
                                 <tr>
                                     <th scope="row">1:00-2:00</th>
                                 </tr>
-                                <tr style={{background: "rgba(229, 238, 244, 0.6)"}}>
+                                <tr style={{background: "#b1e48c"}}>
                                     <th scope="row">2:00-2:30</th>
                                     <td colSpan="6">Lunch Break</td>
 
@@ -93,7 +93,7 @@ function Timetable() {
                                     <td>Talk</td>
                                     <td>Talk</td>
                                 </tr>
-                                <tr style={{background: "rgba(229, 238, 244, 0.6)"}}>
+                                <tr style={{background: "#b1e48c"}}>
                                     <th scope="row">3:30-4:00</th>
                                     <td colSpan="6">Tea Break</td>
                                 </tr>
