@@ -3,8 +3,8 @@ import RingLoader from "react-spinners/RingLoader";
 import Speaker from "./Speaker";
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
-function SortNames(data){
-    for (let j=0; j<data.length; j++){
+function SortNames(data) {
+    for (let j = 0; j < data.length; j++) {
         let splited = data[j].name.split(" ")
         data[j]['last_name'] = splited[splited.length - 1]
     }
@@ -54,6 +54,7 @@ function Speakers() {
                 data_row['time'] = rows[i].Time
                 data_row['youtube'] = rows[i].Youtube
                 data_row['file'] = rows[i].File
+                data_row['talk'] = rows[i].Talk
                 temp.push(data_row)
             }
             SortNames(temp)
@@ -78,15 +79,26 @@ function Speakers() {
                     </div>
                     {
                         !(data.length) ?
-                            (<div style={{marginBottom: '15em'}}>
+                            (<div style={{ marginBottom: '15em' }}>
                                 <RingLoader color={'#00093c'} loading={true} css={''} size={150} />
                             </div>)
                             :
                             (<div>
-                                {data.map((value, index) => {
-                                    return <Speaker key={index} props={value} />
-                                })}
-                                    <div style={{marginTop:'20px', fontWeight:'bold'}}>* to be confirmed</div>
+                                <div style={{ marginTop: '1.5em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Speakers of Review Talks (1 hour)</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Review")
+                                            return <Speaker key={index} props={value} />
+                                    })}
+                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Speakers of Research Talks (30 minutes)</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Research")
+                                            return <Speaker key={index} props={value} />
+                                    })}
+                                <div style={{ marginTop: '1em', fontWeight: 'bold' }}>* to be confirmed</div>
                             </div>
                             )
                     }
