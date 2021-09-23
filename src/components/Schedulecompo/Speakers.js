@@ -84,10 +84,21 @@ function Speakers() {
                             </div>)
                             :
                             (<div>
-                                {data.map((value, index) => {
-                                    return <Speaker key={index} props={value} />
-                                })}
-                                    <div style={{marginTop:'20px', fontWeight:'bold'}}>* to be confirmed</div>
+                                <div style={{ marginTop: '1.5em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Speakers of Review Talks (1 hour)</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Review")
+                                            return <Speaker key={index} props={value} />
+                                    })}
+                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Speakers of Research Talks (30 minutes)</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Research")
+                                            return <Speaker key={index} props={value} />
+                                    })}
+                                <div style={{ marginTop: '1em', fontWeight: 'bold' }}>* to be confirmed</div>
                             </div>
                             )
                     }
