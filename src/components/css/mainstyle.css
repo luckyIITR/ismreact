@@ -627,7 +627,7 @@ a {
 }
 
 .footer .col-1{
-    flex-basis:  20%;
+    flex-basis:  17%;
     padding: 10px;
 }
 
@@ -636,7 +636,7 @@ a {
 }
 .footer .col-2{
     margin: auto;
-    flex-basis:  60%;
+    flex-basis:  54%;
     padding: 10px;
 }
 
@@ -649,7 +649,7 @@ a {
 
 .footer .col-3{
     margin: auto;
-    flex-basis:  20%;
+    flex-basis:  16%;
     padding: 10px;
 }
 .footer .col-3 .tooltip{
