@@ -1,6 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+function hideMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.style.right = "-200px"
+}
+
 function Nav(props) {
     return (
         <div className="stick">
@@ -8,7 +13,7 @@ function Nav(props) {
                 <div className="menuWrapper" >
                     <nav id="navLinks">
                         <div className="nav-links">
-                            <i className="fas fa-times"> </i>
+                            <i className="fas fa-times" onClick={hideMenu}> </i>
                             <ul>
                                 <li><Link to="/">HOME</Link></li>
                                 <li><Link to="/Register">REGISTER</Link></li>

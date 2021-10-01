@@ -1,5 +1,6 @@
 {
   "name": "ism",
+  "homepage": "https://iitr.ac.in/ism21/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

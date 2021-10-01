@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Member(props) {
-    console.log(props)
     return (
         <div className="main-page-noticeboard">
             <a href={props.props.href}
