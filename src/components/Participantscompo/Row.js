@@ -1,4 +1,11 @@
 import React from 'react';
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+}
 
 function Row(props) {
     return (
@@ -7,7 +14,7 @@ function Row(props) {
                 {props.props.index + 1}
             </div>
             <div className="cell">
-                {props.props.row.name}
+                {titleCase(props.props.row.name)}
             </div>
             <div className="cell">
                 {props.props.row.post}
