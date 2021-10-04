@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/logo2.png'
 import {Link} from "react-router-dom";
-
+import logo2 from '../images/75ylogo.jpeg'
 
 
 function showMenu() {
@@ -18,6 +18,7 @@ function Logo() {
 
                 <div className="mainHeaderContent">
                     <Link to="/" ><img src={logo} alt="" className="logoImage" /></Link>
+                    <Link to="/" ><img src={logo2} alt="" style={{"float": "right", "width":"250px", 'marginBottom':"22px", "maxWidth":"80%"}} /></Link>
                 </div>
                 <div className="menuHamburgerContainer">
                     <i className="fas fa-bars" onClick={showMenu}> </i>
