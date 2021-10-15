@@ -55,10 +55,10 @@ function Speakers() {
                 data_row['youtube'] = rows[i].Youtube
                 data_row['file'] = rows[i].File
                 data_row['talk'] = rows[i].Talk
+                data_row['title'] = rows[i].Title
                 temp.push(data_row)
             }
             SortNames(temp)
-
 
             setData(temp)
         } catch (err) {
@@ -96,6 +96,14 @@ function Speakers() {
                                 {// eslint-disable-next-line
                                     data.map((value, index) => {
                                         if (value.talk === "Research")
+                                            return <Speaker key={index} props={value} />
+                                })}
+
+                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Short Presentations</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Student")
                                             return <Speaker key={index} props={value} />
                                     })}
                                 <div style={{ marginTop: '1em', fontWeight: 'bold' }}>* to be confirmed</div>

@@ -128,7 +128,7 @@ function Timetable() {
                                     <th scope="row">5:30-6:00</th>
                                     <td rowSpan="2"> Discussion session</td>
                                     <td rowSpan="2"> Discussion session</td>
-                                    <td rowSpan="2"/>
+                                    <td rowSpan="2">Special Talk</td>
                                     <td>Talk</td>
                                     <td rowSpan="2"> Discussion session</td>
                                     <td rowSpan="2"> Discussion session</td>

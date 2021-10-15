@@ -1016,18 +1016,24 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
+@media screen and (max-width:600px){
+    .sch-row{
+        display: block;
+    }
+}
+
 
 .sch-col-1{
-    flex-basis: 50%;
+    flex-basis: 40%;
    
 
 }
 .sch-col-2{
-    flex-basis: 50%;
-    align-items: flex-end;
+    display: flex;
+    /*align-items: flex-end;*/
     flex: 1;
-    text-align: right;
-    
+    /*text-align: right;*/
+    flex-direction: column;
 }
 
 .time{
