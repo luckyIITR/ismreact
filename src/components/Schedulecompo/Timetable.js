@@ -174,7 +174,7 @@ function Timetable() {
                                     <th scope="row">18:00-18:30</th>
                                     <td> Discussion session</td>
                                     <td>Break</td>
-                                    <td>Break</td>
+                                    <td>Nemani Suryanarayana</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">18:30-19:00</th>
