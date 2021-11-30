@@ -463,10 +463,7 @@ pre code {
         max-width: 960px; } }
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px; }
-    .container-timetable{
-        max-width: 1320px;
-    }}
+        max-width: 1140px; } }
 
 .container-fluid {
     width: 100%;
@@ -8202,20 +8199,9 @@ h1, h2, h3, h4, h5,
 }
 .table tbody tr {
     margin-bottom: 10px; }
-.table tbody th {
+.table tbody th, .table tbody td {
     border: none;
-    padding: 2px 0px;
-    border-bottom: 3px solid #f8f9fd;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Lato', serif;
-    display: table-cell;
-    vertical-align: middle;
-    width: 9%;
-}
-.table tbody td {
-    border: none;
-    padding: 2px 5px;
+    padding: 2px 18px;
     border-bottom: 3px solid #f8f9fd;
     font-size: 16px;
     font-weight: bold;
@@ -8223,3 +8209,4 @@ h1, h2, h3, h4, h5,
     display: table-cell;
     vertical-align: middle;
 }
+  
