@@ -13,10 +13,10 @@ function Speaker(props) {
                                 {
                                     props.props.page === "#/Schedule" ?
                                         <a href={props.props.page}
-                                           rel="noopener noreferrer">{props.props.name}</a>
+                                           rel="noopener noreferrer" id={props.props.name}>{props.props.name}</a>
                                         :
                                         <a href={props.props.page} target={'_blank'}
-                                           rel="noopener noreferrer">{props.props.name}</a>
+                                           rel="noopener noreferrer" id={props.props.name}>{props.props.name}</a>
                                 }
 
                             </p>
