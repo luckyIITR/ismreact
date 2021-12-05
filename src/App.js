@@ -5,6 +5,7 @@ import Participants from "./components/Participants";
 import Noc from "./components/Noc";
 import Schedule from "./components/Schedule";
 import Contact from "./components/Contact";
+import Zoom from "./components/Zoom"
 import './components/css/index.css'
 import './components/css/cms.min.css'
 import './components/css/global_variables.css'
@@ -21,7 +22,8 @@ function App() {
             <Route path="/Participants" component={Participants} exact/>
             <Route path="/Noc" component={Noc} exact/>
             <Route path="/Schedule" component={Schedule} exact/>
-            <Route path="/Contact" component={Contact} exact/>
+              <Route path="/Zoom" component={Zoom} exact/>
+              <Route path="/Contact" component={Contact} exact/>
          </Switch>
     </HashRouter>
 );

@@ -20,6 +20,7 @@ function Nav(props) {
                                 <li><Link to="/Participants">PARTICIPANTS</Link></li>
                                 <li><Link to="/Noc">NOC</Link></li>
                                 <li><Link to="/Schedule">SPEAKERS et al</Link></li>
+                                <li><Link to="/Zoom">ZOOM LINKS</Link></li>
                                 <li><Link to="/Contact">CONTACT</Link></li>
                             </ul>
                         </div>
