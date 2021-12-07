@@ -169,7 +169,7 @@ function Timetable() {
                                     <td style={{fontWeight: "1000"}}>Sudhakar Panda</td>
                                     <td style={{fontWeight: "1000"}}>Sankhadeep Chakraborty</td>
                                     <td style={{fontWeight: "1000"}}>Sunil Mukhi</td>
-                                    <td style={{fontWeight: "1000"}}>Sayantani Bhattacharya</td>
+                                    <td style={{fontWeight: "1000"}}>Debashis Ghoshal</td>
                                     <td style={{fontWeight: "1000"}}>Abhijit Gadde</td>
                                     <td style={{fontWeight: "1000"}}>Shibaji Roy</td>
                                 </tr>
