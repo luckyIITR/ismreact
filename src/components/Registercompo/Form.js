@@ -75,7 +75,7 @@ function Form() {
                         <option value="DEFAULT" selected disabled>- Select a category -</option>
                         <option value="Student">Student</option>
                         <option value="Post Doc.">Post Doc.</option>
-                        <option value="Faculty">Faculty</option>
+                        <option value="Faculty">Faculty (active/retired)</option>
                     </select>
                 </div>
 

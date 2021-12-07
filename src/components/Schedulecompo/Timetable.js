@@ -89,7 +89,7 @@ function Timetable() {
                                     <td ><Link to="Rajesh Gupta" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Rajesh Gupta</Link> </td>
                                     <td ><Link to="Sudip Karan" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sudip Karan</Link> </td>
                                     <td ><Link to="Pranjal Pandey" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Pranjal Pandey</Link> </td>
-                                    <td ><Link to="Akrajyoti Manna" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Akrajyoti Manna</Link> </td>
+                                    <td ><Link to="Arkajyoti Manna" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Arkajyoti Manna</Link> </td>
                                 </tr>
 
                                 <tr>
@@ -169,7 +169,7 @@ function Timetable() {
                                     <td style={{fontWeight: "1000"}}>Sudhakar Panda</td>
                                     <td style={{fontWeight: "1000"}}>Sankhadeep Chakraborty</td>
                                     <td style={{fontWeight: "1000"}}>Sunil Mukhi</td>
-                                    <td style={{fontWeight: "1000"}}>Debashis Ghoshal</td>
+                                    <td style={{fontWeight: "1000"}}>Sayantani Bhattacharya</td>
                                     <td style={{fontWeight: "1000"}}>Abhijit Gadde</td>
                                     <td style={{fontWeight: "1000"}}>Shibaji Roy</td>
                                 </tr>

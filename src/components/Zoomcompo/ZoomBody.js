@@ -1,85 +1,83 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ZoomRow from "./ZoomRow";
+import RingLoader from "react-spinners/RingLoader";
+
+const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 function ZoomBody() {
+    const [data, setData] = useState([])
+
+    const accessSpread = async () => {
+
+        try {
+            const creds = require('../client_secret.json'); // the file saved above
+            const doc = new GoogleSpreadsheet('1XObBBFssSCgUnWuI4qEfjjzPcE2Na9rN_uRUhkB2glY');
+            await doc.useServiceAccountAuth(creds);
+
+            await doc.loadInfo(); // loads document properties and worksheets
+
+            // append rows
+            const sheet = doc.sheetsByIndex[2]
+            // read rows
+            const rows = await sheet.getRows();
+            const temp = []
+
+
+            for (let i = 0; i < rows.length; i++) {
+                const data_row = {}
+                data_row['Date'] = rows[i].Date
+                data_row['RZoom'] = rows[i].RZoom
+                data_row['RYouTube'] = rows[i].RYouTube
+                data_row['OZoom'] = rows[i].OZoom
+                data_row['OYouTube'] = rows[i].OYouTube
+                temp.push(data_row)
+            }
+            setData(temp)
+        } catch (err) {
+            console.error(err.message)
+        }
+    }
+    useEffect(() => {
+        accessSpread()
+        // eslint-disable-next-line
+    }, [])
+
     return (
-        <div>
-            <div className="cmsContainer">
-                <div className="textArea noticeboard-upcoming-events-container">
-                    <div className="NOC">
-                        <div className="sectionHeading">
-                            Zoom Links
-                        </div>
-                        <div>
-                            <div className="main-page-noticeboard">
-                                <div className="row">
-                                    <div className="data">
-                                    {/*    THis is table */}
+        <div className="limiter" style={!(data.length) ? {width : '60%'} : {width: '100%'} }>
+            <div className="register-heading sectionHeading participants" style={{marginBottom:'-44px'}}>
+                Zoom / Youtube Links
+                <br/>
+                <br/>
+            </div>
 
-                                        <section className="ftco-section">
-                                            <div className="container-timetable container">
+            {
+                !(data.length) ?
+                    (<div style={{marginBottom: '30em', marginTop:'5em'}}>
+                        <RingLoader color={'#00093c'} loading={true} css={''} size={150}/>
+                    </div>)
+                    :
 
-                                                <div className="row">
-                                                    <div className="col-md-12">
-                                                        <div className="table-wrap">
-                                                            <table className="table" style={{textAlign: "center", justifyContent: "center"}} id='#table-scroll'>
-                                                                <thead className="thead-primary">
-
-                                                                <tr>
-                                                                    <th>DATE</th>
-                                                                    <th>Pre-Lunch</th>
-                                                                    <th>Post-Lunch</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 12 (Sunday)</th>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/96435676200" target="_blank" rel="noreferrer">https://zoom.us/j/96435676200</a></td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/98634309062" target="_blank" rel="noreferrer">https://zoom.us/j/98634309062</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 13 (Monday)</th>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/99089366616" target="_blank" rel="noreferrer">https://zoom.us/j/99089366616</a></td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/98173717217" target="_blank" rel="noreferrer">https://zoom.us/j/98173717217</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 14 (Tuesday)</th>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/97119593707" target="_blank" rel="noreferrer">https://zoom.us/j/97119593707</a></td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/91563443854" target="_blank" rel="noreferrer">https://zoom.us/j/91563443854</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 15 (Wednesday)</th>
-                                                                    <td style={{fontWeight: "700"}}>OFF</td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/96217353874" target="_blank" rel="noreferrer">https://zoom.us/j/96217353874</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 16 (Thursday)</th>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/97110643733" target="_blank" rel="noreferrer">https://zoom.us/j/97110643733</a></td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/95165784768" target="_blank" rel="noreferrer">https://zoom.us/j/95165784768</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row" style={{fontWeight: "1000"}}>Dec 17 (Friday)</th>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/97534397264" target="_blank" rel="noreferrer">https://zoom.us/j/97534397264</a></td>
-                                                                    <td style={{fontWeight: "700"}}><a href="https://zoom.us/j/92164697098" target="_blank" rel="noreferrer">https://zoom.us/j/92164697098</a></td>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-
-
-                                    {/*    Here table ends*/}
-
-                                    </div>
+                  (  <div className="container-table100">
+                        <div className="wrap-table100" style={{height: 'auto'}}>
+                            <div className="table">
+                                <div className="header-table">
+                                    <div className="cell">DATE</div>
+                                    <div className="cell" style={{textAlign: 'center'}}>Pre-Lunch</div>
+                                    <div className="cell" style={{textAlign: 'center'}}>Post-Lunch</div>
                                 </div>
+
+                                {/*    here data will be updated*/}
+                                {
+                                    data.map((value, index) => {
+                                        return <ZoomRow key={index}
+                                                        props={{index: index, row: value}}/>
+                                    })
+                                }
+
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
+                    </div>)
+            }
         </div>
     )
 }

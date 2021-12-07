@@ -939,12 +939,13 @@ hr{
         display:none
     }
     .row-table .cell:before {
-        font-size:12px;
+        font-size:16px;
         color:gray;
-        line-height:1.2;
+        line-height:1;
         text-transform:uppercase;
         font-weight:unset!important;
-        margin-bottom:13px;
+        margin-bottom:4px;
+        content: attr(datatitle);
         min-width:98px;
         display:block
     }
