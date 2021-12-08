@@ -201,7 +201,7 @@ function Timetable() {
                                 </tr>
                                 <tr>
                                     <th scope="row">17:30-18:00</th>
-                                    <td rowSpan="2"> Discussion session (Chair: Sandip Trivedi)</td>
+                                    <td rowSpan="2"> Discussion session (Chair: Swapna Mahapatra)</td>
                                     <td rowSpan="2"> Discussion session (Chair: Dileep Jatkar)</td>
                                     <td ><Link to="Zohar Komargodski" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Zohar Komargodski</Link></td>
                                     <td><Link to="Nathan Seiberg" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Nathan Seiberg</Link></td>

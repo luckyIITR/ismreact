@@ -10,8 +10,8 @@ function Schedule() {
         <div >
             <Logo />
             <Nav props={{margin: "-50px 0 0 0"}}/>
-            <Speakers/>
             <Timetable/>
+            <Speakers/>
             <Footer/>
         </div>
     )
