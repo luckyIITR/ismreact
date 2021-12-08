@@ -41,7 +41,7 @@ function Timetable() {
                                     <td rowSpan="2"><Link to="Rajesh Gopakumar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Rajesh Gopakumar</Link></td>
                                     <td><Link to="Sergei Gukov" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sergei Gukov</Link></td>
                                     <td ><Link to="Ashoke Sen" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Ashoke Sen</Link></td>
-                                    <td rowSpan="3"> Free Morning</td>
+                                    <td rowSpan="4"> Free up to 12 noon</td>
                                     <td><Link to="Akshay Yelleshpur Srikant" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Akshay Yelleshpur Srikant</Link></td>
                                     <td><Link to="Sandipan Kundu" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sandipan Kundu</Link></td>
                                 </tr>
@@ -79,7 +79,7 @@ function Timetable() {
                                     <td><Link to="Anshuman Maharana" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Anshuman Maharana</Link></td>
                                     <td><Link to="Amitabh Virmani" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Amitabh Virmani</Link></td>
                                     <td><Link to="Yuji Tachikawa" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Yuji Tachikawa</Link></td>
-                                    <td rowSpan="5"> Free Morning</td>
+                                    <td/>
                                     <td><Link to="Partha Paul" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Partha Paul</Link></td>
                                     <td><Link to="Jaydeep Kumar Basak" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Jaydeep Kumar Basak</Link></td>
                                 </tr>
@@ -88,6 +88,7 @@ function Timetable() {
                                     <td ><Link to="Suchetan Das" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Suchetan Das</Link> </td>
                                     <td ><Link to="Rajesh Gupta" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Rajesh Gupta</Link> </td>
                                     <td ><Link to="Sudip Karan" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sudip Karan</Link> </td>
+                                    <td rowSpan="4"> Discussion session on Gender Imbalance in STEM</td>
                                     <td ><Link to="Pranjal Pandey" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Pranjal Pandey</Link> </td>
                                     <td ><Link to="Arkajyoti Manna" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Arkajyoti Manna</Link> </td>
                                 </tr>
