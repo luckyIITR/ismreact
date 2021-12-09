@@ -30,6 +30,8 @@ function ZoomBody() {
                 data_row['RYouTube'] = rows[i].RYouTube
                 data_row['OZoom'] = rows[i].OZoom
                 data_row['OYouTube'] = rows[i].OYouTube
+                data_row['DZoom'] = rows[i].DZoom
+                data_row['DYouTube'] = rows[i].DYouTube
                 temp.push(data_row)
             }
             setData(temp)
@@ -64,6 +66,7 @@ function ZoomBody() {
                                     <div className="cell">DATE</div>
                                     <div className="cell" style={{textAlign: 'center'}}>Pre-Lunch</div>
                                     <div className="cell" style={{textAlign: 'center'}}>Post-Lunch</div>
+                                    <div className="cell" style={{textAlign: 'center'}}>Discussion Sessions</div>
                                 </div>
 
                                 {/*    here data will be updated*/}

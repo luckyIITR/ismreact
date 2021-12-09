@@ -58,6 +58,36 @@ function ZoomRow(props) {
                 </div>
 
             </div>
+            <div className='cell' datatitle="Discussion Session" style={{paddingTop : '10px', paddingBottom:'10px'}}>
+                { (props.props.row.Date === 'Dec 15 (Wednesday)') ?
+                    (
+                        <div style={{textAlign : 'center'}}>OFF</div>
+                    )
+                    :
+                    (
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <div className="lect">
+                                <a className="ui button outline lifeAtIITRButton"
+                                   href={props.props.row.RZoom}
+                                   target={'_blank'}
+                                   rel="noopener noreferrer">
+                                    <i className="fas fa-video"
+                                       style={{color: "blue"}}/>&nbsp;&nbsp; ZOOM</a>
+                            </div>
+                            <div className="lect">
+                                <a className="ui button outline lifeAtIITRButton"
+                                   href={props.props.row.RYouTube}
+                                   target={'_blank'}
+                                   rel="noopener noreferrer"><i
+                                    className="fab fa-youtube"
+                                    style={{color: "red"}}> </i>&nbsp;&nbsp; YouTube</a>
+                            </div>
+                        </div>
+                    )
+                }
+
+
+            </div>
 
         </div>
     )
