@@ -45,7 +45,7 @@ function ZoomBody() {
     }, [])
 
     return (
-        <div className="limiter" style={!(data.length) ? {width : '60%'} : {width: '100%'} }>
+        <div className="limiter" style={!(data.length) ? {width : '70%'} : {width: '100%'} }>
             <div className="register-heading sectionHeading participants" style={{marginBottom:'-44px'}}>
                 Zoom / Youtube Links
                 <br/>
