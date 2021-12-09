@@ -68,7 +68,7 @@ function ZoomRow(props) {
                         <div style={{display: 'flex', justifyContent: 'center'}}>
                             <div className="lect">
                                 <a className="ui button outline lifeAtIITRButton"
-                                   href={props.props.row.RZoom}
+                                   href={props.props.row.DZoom}
                                    target={'_blank'}
                                    rel="noopener noreferrer">
                                     <i className="fas fa-video"
@@ -76,7 +76,7 @@ function ZoomRow(props) {
                             </div>
                             <div className="lect">
                                 <a className="ui button outline lifeAtIITRButton"
-                                   href={props.props.row.RYouTube}
+                                   href={props.props.row.DYouTube}
                                    target={'_blank'}
                                    rel="noopener noreferrer"><i
                                     className="fab fa-youtube"
