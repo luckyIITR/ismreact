@@ -846,7 +846,7 @@ hr{
     display: none;
   }
 .wrap-table100 {
-    width:960px;
+    width:80rem;
     border-radius:10px;
     height: 50vh;
     overflow-y: auto;
