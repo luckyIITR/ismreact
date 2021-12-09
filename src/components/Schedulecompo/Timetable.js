@@ -33,7 +33,7 @@ function Timetable() {
                                     <td style={{fontWeight: "1000"}}>Ramadevi</td>
                                     <td style={{fontWeight: "1000"}}>Anirban Basu</td>
                                     <td/>
-                                    <td style={{fontWeight: "1000"}}>Nabamita Banerjee</td>
+                                    <td style={{fontWeight: "1000"}}>Abhijit Gadde</td>
                                     <td style={{fontWeight: "1000"}}>Harvendra Singh</td>
                                 </tr>
                                 <tr>
@@ -170,8 +170,8 @@ function Timetable() {
                                     <td style={{fontWeight: "1000"}}>Sudhakar Panda</td>
                                     <td style={{fontWeight: "1000"}}>Sankhadeep Chakraborty</td>
                                     <td style={{fontWeight: "1000"}}>Sunil Mukhi</td>
-                                    <td style={{fontWeight: "1000"}}>Debashis Ghoshal</td>
-                                    <td style={{fontWeight: "1000"}}>Abhijit Gadde</td>
+                                    <td style={{fontWeight: "1000"}}>Swapna Mahapatra</td>
+                                    <td style={{fontWeight: "1000"}}>Nabamita Banerjee</td>
                                     <td style={{fontWeight: "1000"}}>Shibaji Roy</td>
                                 </tr>
                                 <tr>
