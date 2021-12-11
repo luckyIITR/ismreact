@@ -125,7 +125,7 @@ function Timetable() {
                                 <tr>
                                     <th scope="row" style={{fontWeight: "1000"}}>Session Chairs</th>
                                     <td style={{fontWeight: "1000"}}>Jyotirmoy Bhattacharya</td>
-                                    <td style={{fontWeight: "1000"}}>Gautam Mandal</td>
+                                    <td style={{fontWeight: "1000"}}>Nabamita Banerjee</td>
                                     <td style={{fontWeight: "1000"}}>Supriya Kar</td>
                                     <td style={{fontWeight: "1000"}}>Prasanta Tripathy</td>
                                     <td style={{fontWeight: "1000"}}>Sudipta Mukherji</td>
