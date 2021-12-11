@@ -17,7 +17,7 @@ function Timetable() {
                             <table className="table" style={{textAlign: "center", justifyContent: "center"}} id='#table-scroll'>
                                 <thead className="thead-primary">
                                 <tr>
-                                    <th>Time<br/>IST (UTC + 05:30)</th>
+                                    <th style={{lineHeight: "0.8em"}}>Time<br/><i style={{fontSize: "0.65em"}}>IST (UTC + 05:30)</i></th>
                                     <th>Sun Dec 12</th>
                                     <th>Mon Dec 13</th>
                                     <th>Tue Dec 14</th>
