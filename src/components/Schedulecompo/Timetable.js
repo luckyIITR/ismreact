@@ -17,7 +17,7 @@ function Timetable() {
                             <table className="table" style={{textAlign: "center", justifyContent: "center"}} id='#table-scroll'>
                                 <thead className="thead-primary">
                                 <tr>
-                                    <th>Time</th>
+                                    <th style={{lineHeight: "0.8em"}}>Time<br/><i style={{fontSize: "0.65em"}}>IST (UTC + 05:30)</i></th>
                                     <th>Sun Dec 12</th>
                                     <th>Mon Dec 13</th>
                                     <th>Tue Dec 14</th>
@@ -37,7 +37,7 @@ function Timetable() {
                                     <td style={{fontWeight: "1000"}}>Harvendra Singh</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">9:30-10:00</th>
+                                    <th scope="row">09:30-10:00</th>
                                     <td rowSpan="2"><Link to="Rajesh Gopakumar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Rajesh Gopakumar</Link></td>
                                     <td><Link to="Sergei Gukov" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sergei Gukov</Link></td>
                                     <td ><Link to="Ashoke Sen" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Ashoke Sen</Link></td>
