@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import Speaker from "./Speaker";
+import Discussion from "./Discussion";
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 function SortNames(data) {
@@ -106,6 +107,15 @@ function Speakers() {
                                         if (value.talk === "Student")
                                             return <Speaker key={index} props={value} />
                                     })}
+
+                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Discussion Sessions</div>
+
+                                {// eslint-disable-next-line
+                                    data.map((value, index) => {
+                                        if (value.talk === "Discussion")
+                                            return <Discussion key={index} props={value} />
+                                    })}
+
                                 <div style={{ marginTop: '1em', fontWeight: 'bold' }}>* to be confirmed</div>
                             </div>
                             )
