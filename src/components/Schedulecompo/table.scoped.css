@@ -8206,7 +8206,7 @@ h1, h2, h3, h4, h5,
 .table tbody th{
     border: none;
     padding: 2px 0px;
-    border-bottom: 3px solid #f8f9fd;
+    border-bottom: 3px solid #bcbcbc;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Lato', serif;
@@ -8217,7 +8217,7 @@ h1, h2, h3, h4, h5,
 .table tbody td {
     border: none;
     padding: 2px 5px;
-    border-bottom: 3px solid #f8f9fd;
+    border-bottom: 3px solid #bcbcbc;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Lato', serif;
