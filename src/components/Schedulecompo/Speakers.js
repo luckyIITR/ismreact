@@ -115,7 +115,6 @@ function Speakers() {
                                         if (value.talk === "Discussion")
                                             return <Discussion key={index} props={value} />
                                     })}
-
                                 <div style={{ marginTop: '1em', fontWeight: 'bold' }}>* to be confirmed</div>
                             </div>
                             )

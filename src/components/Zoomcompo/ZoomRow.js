@@ -8,7 +8,7 @@ function ZoomRow(props) {
             </div>
 
             <div className='cell' datatitle="Pre-Lunch" style={{paddingTop : '10px', paddingBottom:'10px'}}>
-                { (props.props.row.Date === 'Dec 15 (Wednesday)') ?
+                { (props.props.row.Date === '(Wednesday)') ?
                     (
                         <div style={{textAlign : 'center'}}>OFF</div>
                     )
