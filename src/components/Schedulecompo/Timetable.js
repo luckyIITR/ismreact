@@ -1,6 +1,6 @@
 import React from 'react';
 import './table.scoped.css'
-import { Link } from 'react-scroll'
+import {Link} from 'react-scroll'
 
 function Timetable() {
     return (
@@ -14,115 +14,115 @@ function Timetable() {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="table-wrap">
-                            <table className="table" style={{ textAlign: "center", justifyContent: "center" }} id='#table-scroll'>
+                            <table className="table" style={{textAlign: "center", justifyContent: "center"}} id='#table-scroll'>
                                 <thead className="thead-primary">
-                                    <tr>
-                                        <th style={{ lineHeight: "0.8em" }}>Time<br /><i style={{ fontSize: "0.65em" }}>IST (UTC + 05:30)</i></th>
-                                        <th>Sun Dec 12</th>
-                                        <th>Mon Dec 13</th>
-                                        <th>Tue Dec 14</th>
-                                        <th>Wed Dec 15</th>
-                                        <th>Thu Dec 16</th>
-                                        <th>Fri Dec 17</th>
-                                    </tr>
+                                <tr>
+                                    <th style={{lineHeight: "0.8em"}}>Time<br/><i style={{fontSize: "0.65em"}}>IST (UTC + 05:30)</i></th>
+                                    <th>Sun Dec 12</th>
+                                    <th>Mon Dec 13</th>
+                                    <th>Tue Dec 14</th>
+                                    <th>Wed Dec 15</th>
+                                    <th>Thu Dec 16</th>
+                                    <th>Fri Dec 17</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row" style={{ fontWeight: "1000" }}>Session Chairs</th>
-                                        <td style={{ fontWeight: "1000" }}> Spenta Wadia</td>
-                                        <td style={{ fontWeight: "1000" }}>Ramadevi</td>
-                                        <td style={{ fontWeight: "1000" }}>Anirban Basu</td>
-                                        <td />
-                                        <td style={{ fontWeight: "1000" }}>Abhijit Gadde</td>
-                                        <td style={{ fontWeight: "1000" }}>Harvendra Singh</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">09:30-10:00</th>
-                                        <td rowSpan="2" ><Link to="Rajesh Gopakumar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Inauguration <br />+<br /> Rajesh Gopakumar</Link></td>
-                                        <td><Link to="Sergei Gukov" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Sergei Gukov</Link></td>
-                                        <td ><Link to="Ashoke Sen" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Ashoke Sen</Link></td>
-                                        <td rowSpan="4"> Free up to 12 noon</td>
-                                        <td><Link to="Akshay Yelleshpur Srikant" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Akshay Yelleshpur Srikant</Link></td>
-                                        <td><Link to="Sandipan Kundu" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Sandipan Kundu</Link></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10:00-10:30</th>
-                                        <td><Link to="Sujay Ashok" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Sujay Ashok</Link></td>
-                                        <td><Link to="Shiraz Minwalla" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Shiraz Minwalla</Link></td>
-                                        <td><Link to="Koushik Ray" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Koushik Ray</Link></td>
-                                        <td><Link to="Pratik Rath" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Pratik Rath</Link></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10:30-11:00</th>
-                                        <td><Link to="Chethan Krishnan" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Chethan Krishnan</Link></td>
-                                        <td><Link to="Semanti Dutta" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Semanti Dutta</Link></td>
-                                        <td><Link to="Onkar Parrikar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Onkar Parrikar</Link></td>
-                                        <td><Link to="Arnab Rudra" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Arnab Rudra</Link></td>
-                                        <td><Link to="Joydeep Chakravarty" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Joydeep Chakravarty</Link></td>
-                                    </tr>
-                                    <tr style={{ background: "rgba(229, 238, 244, 0.6)" }}>
-                                        <th scope="row">11:00-11:30</th>
-                                        <td colSpan="6">Tea Break</td>
+                                <tr>
+                                    <th scope="row" style={{fontWeight: "1000"}}>Session Chairs</th>
+                                    <td style={{fontWeight: "1000"}}> Spenta Wadia</td>
+                                    <td style={{fontWeight: "1000"}}>Ramadevi</td>
+                                    <td style={{fontWeight: "1000"}}>Anirban Basu</td>
+                                    <td/>
+                                    <td style={{fontWeight: "1000"}}>Abhijit Gadde</td>
+                                    <td style={{fontWeight: "1000"}}>Harvendra Singh</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">09:30-10:00</th>
+                                    <td rowSpan="2" ><Link to="Rajesh Gopakumar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Inauguration <br/>+<br/> Rajesh Gopakumar</Link></td>
+                                    <td><Link to="Sergei Gukov" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Sergei Gukov</Link></td>
+                                    <td ><Link to="Ashoke Sen" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Ashoke Sen</Link></td>
+                                    <td rowSpan="4"> Free up to 12 noon</td>
+                                    <td><Link to="Akshay Yelleshpur Srikant" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Akshay Yelleshpur Srikant</Link></td>
+                                    <td><Link to="Sandipan Kundu" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sandipan Kundu</Link></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00-10:30</th>
+                                    <td><Link to="Sujay Ashok" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Sujay Ashok</Link></td>
+                                    <td><Link to="Shiraz Minwalla" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Shiraz Minwalla</Link></td>
+                                    <td><Link to="Koushik Ray" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Koushik Ray</Link></td>
+                                    <td><Link to="Pratik Rath" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Pratik Rath</Link></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:30-11:00</th>
+                                    <td><Link to="Chethan Krishnan" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Chethan Krishnan</Link></td>
+                                    <td><Link to="Semanti Dutta" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Semanti Dutta</Link></td>
+                                    <td><Link to="Onkar Parrikar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Onkar Parrikar</Link></td>
+                                    <td><Link to="Arnab Rudra" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Arnab Rudra</Link></td>
+                                    <td><Link to="Joydeep Chakravarty" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Joydeep Chakravarty</Link></td>
+                                </tr>
+                                <tr style={{background: "rgba(229, 238, 244, 0.6)"}}>
+                                    <th scope="row">11:00-11:30</th>
+                                    <td colSpan="6">Tea Break</td>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" style={{ fontWeight: "1000" }}>Session Chairs</th>
-                                        <td style={{ fontWeight: "1000" }}>Shiroman Prakash</td>
-                                        <td style={{ fontWeight: "1000" }}>Chandrasekhar Bhamidipati</td>
-                                        <td style={{ fontWeight: "1000" }}>Supriya Kar</td>
-                                        <td />
-                                        <td style={{ fontWeight: "1000" }}>Sheshansu Seskhar Pal</td>
-                                        <td style={{ fontWeight: "1000" }}>Kamal Lochan Panigrahi</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">11:30-12:00</th>
-                                        <td><Link to="Anshuman Maharana" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Anshuman Maharana</Link></td>
-                                        <td><Link to="Amitabh Virmani" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Amitabh Virmani</Link></td>
-                                        <td><Link to="Yuji Tachikawa" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Yuji Tachikawa</Link></td>
-                                        <td />
-                                        <td><Link to="Partha Paul" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Partha Paul</Link></td>
-                                        <td><Link to="Jaydeep Kumar Basak" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Jaydeep Kumar Basak</Link></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" rowSpan="2">12:00-12:30</th>
-                                        <td ><Link to="Suchetan Das" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Suchetan Das</Link> </td>
-                                        <td rowSpan="2"><Link to="Rajesh Gupta" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Rajesh Gupta</Link> </td>
-                                        <td ><Link to="Sudip Karan" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Sudip Karan</Link> </td>
-                                        <td rowSpan="4"><Link to="Nabamita Banerjee & Debashis Ghoshal" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Discussion session on Gender Imbalance in STEM</Link></td>
-                                        <td ><Link to="Pranjal Pandey" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Pranjal Pandey</Link> </td>
-                                        <td ><Link to="Arkajyoti Manna" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Arkajyoti Manna</Link> </td>
-                                    </tr>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style={{fontWeight: "1000"}}>Session Chairs</th>
+                                    <td style={{fontWeight: "1000"}}>Shiroman Prakash</td>
+                                    <td style={{fontWeight: "1000"}}>Chandrasekhar Bhamidipati</td>
+                                    <td style={{fontWeight: "1000"}}>Supriya Kar</td>
+                                    <td/>
+                                    <td style={{fontWeight: "1000"}}>Sheshansu Seskhar Pal</td>
+                                    <td style={{fontWeight: "1000"}}>Kamal Lochan Panigrahi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:30-12:00</th>
+                                    <td><Link to="Anshuman Maharana" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Anshuman Maharana</Link></td>
+                                    <td><Link to="Amitabh Virmani" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Amitabh Virmani</Link></td>
+                                    <td><Link to="Yuji Tachikawa" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Yuji Tachikawa</Link></td>
+                                    <td/>
+                                    <td><Link to="Partha Paul" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Partha Paul</Link></td>
+                                    <td><Link to="Jaydeep Kumar Basak" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Jaydeep Kumar Basak</Link></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowSpan="2">12:00-12:30</th>
+                                    <td ><Link to="Suchetan Das" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Suchetan Das</Link> </td>
+                                    <td rowSpan="2"><Link to="Rajesh Gupta" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Rajesh Gupta</Link> </td>
+                                    <td ><Link to="Sudip Karan" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Sudip Karan</Link> </td>
+                                    <td rowSpan="4"><Link to="Nabamita Banerjee & Debashis Ghoshal" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Discussion session on Gender Imbalance in STEM</Link></td>
+                                    <td ><Link to="Pranjal Pandey" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Pranjal Pandey</Link> </td>
+                                    <td ><Link to="Arkajyoti Manna" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Arkajyoti Manna</Link> </td>
+                                </tr>
 
-                                    <tr>
-                                        <td > <Link to="Arnab P. Saha" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Arnab P. Saha</Link></td>
-                                        <td > <Link to="Mohammed Shabir" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Mohammed Shabir</Link></td>
-                                        <td > <Link to="Gourav Banerjee" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Gourav Banerjee</Link></td>
-                                        <td > <Link to="Sukrut Mondkar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Sukrut Mondkar</Link></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" rowSpan="2">12:30-13:00</th>
-                                        <td > <Link to="Renjan R. John" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Renjan R. John</Link></td>
-                                        <td > <Link to="Suman Kundu" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Suman Kundu</Link></td>
+                                <tr>
+                                    <td > <Link to="Arnab P. Saha" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Arnab P. Saha</Link></td>
+                                    <td > <Link to="Mohammed Shabir" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Mohammed Shabir</Link></td>
+                                    <td > <Link to="Gourav Banerjee" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Gourav Banerjee</Link></td>
+                                    <td > <Link to="Sukrut Mondkar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Sukrut Mondkar</Link></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowSpan="2">12:30-13:00</th>
+                                    <td > <Link to="Renjan R. John" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Renjan R. John</Link></td>
+                                    <td > <Link to="Suman Kundu" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Suman Kundu</Link></td>
 
-                                        <td > <Link to="Madhu Mishra" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Madhu Mishra</Link></td>
-                                        <td > <Link to="Aranya Bhattacharya" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Aranya Bhattacharya</Link></td>
-                                        <td > <Link to="Debodirna Ghosh" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Debodirna Ghosh</Link></td>
-                                    </tr>
+                                    <td > <Link to="Madhu Mishra" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Madhu Mishra</Link></td>
+                                    <td > <Link to="Aranya Bhattacharya" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Aranya Bhattacharya</Link></td>
+                                    <td > <Link to="Debodirna Ghosh" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Debodirna Ghosh</Link></td>
+                                </tr>
 
-                                    <tr>
-                                        <td > <Link to="Anurag Kaushal" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Anurag Kaushal</Link></td>
-                                        <td > <Link to="Ayan K. Patra" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Ayan K. Patra</Link></td>
+                                <tr>
+                                    <td > <Link to="Anurag Kaushal" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Anurag Kaushal</Link></td>
+                                    <td > <Link to="Ayan K. Patra" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Ayan K. Patra</Link></td>
 
-                                        <td > <Link to="Trakshu Sharma" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Trakshu Sharma</Link></td>
-                                        <td > <Link to="Parthiv Haldar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Parthiv Haldar</Link></td>
-                                        <td > <Link to="Akhil Sivakumar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Akhil Sivakumar</Link></td>
-                                    </tr>
+                                    <td > <Link to="Trakshu Sharma" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Trakshu Sharma</Link></td>
+                                    <td > <Link to="Parthiv Haldar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Parthiv Haldar</Link></td>
+                                    <td > <Link to="Akhil Sivakumar" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Akhil Sivakumar</Link></td>
+                                </tr>
 
-                                    <tr >
-                                        <th scope="row" style={{ background: "rgba(229, 238, 244, 0.6)" }}>13:00-13:15</th>
-                                        <td style={{ background: "rgba(229, 238, 244, 0.6)" }} />
-                                        <td > <Link to="Sabyasachi Maulik" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Sabyasachi Maulik</Link></td>
-                                        <td style={{ background: "rgba(229, 238, 244, 0.6)" }} colSpan="4" />
+                                <tr >
+                                    <th scope="row" style={{background: "rgba(229, 238, 244, 0.6)"}}>13:00-13:15</th>
+                                    <td style={{background: "rgba(229, 238, 244, 0.6)"}}/>
+                                    <td > <Link to="Sabyasachi Maulik" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Sabyasachi Maulik</Link></td>
+                                    <td style={{background: "rgba(229, 238, 244, 0.6)"}} colSpan="4"/>
 
                                     </tr>
                                     <tr style={{ background: "rgba(229, 238, 244, 0.6)" }}>
@@ -235,11 +235,11 @@ function Timetable() {
                                     <tr>
                                         <th scope="row">19:00-19:30</th>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">19:30-20:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">19:30-20:00</th>
 
-                                    </tr>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
