@@ -145,8 +145,8 @@ function Timetable() {
                                     <td rowSpan="3"> <Link to="Laura Donnay" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Laura Donnay</Link></td>
                                     <td><Link to="Bindusar Sahoo" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Bindusar Sahoo</Link></td>
                                     <td><Link to="Shouvik Datta" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer", color :"#1a76bb"}}>Shouvik Datta</Link></td>
-                                    <td rowSpan="2"><Link to="Enrico Pajer" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Enrico Pajer</Link> </td>
-                                    <td rowSpan="2"><Link to="Joao Penedones" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Joao Penedones</Link> </td>
+                                    <td rowSpan="3"><Link to="Enrico Pajer" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Enrico Pajer</Link> </td>
+                                    <td rowSpan="3"><Link to="Joao Penedones" smooth={true} duration={1000} offset={-150} style={{cursor : "pointer"}}>Joao Penedones</Link> </td>
                                 </tr>
                                 <tr>
                                     <th scope="row" rowSpan="2">14:30-15:00</th>
