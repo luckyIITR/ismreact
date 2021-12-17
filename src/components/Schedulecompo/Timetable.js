@@ -161,7 +161,7 @@ function Timetable() {
                                         <th scope="row" rowSpan="2">15:00-15:30</th>
                                         <td rowSpan="2"><Link to="Ayan Mukhopadhyay" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Ayan Mukhopadhyay</Link></td>
                                         <td rowSpan="2"><Link to="Arindam Bhattacharjee" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Arindam Bhattacharjee</Link></td>
-                                        <td rowSpan="2"><Link to="Chetan Gowdigere" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Chetan Gowdigere </Link></td>
+                                        <td rowSpan="2"><Link to="Chethan Gowdigere" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Chethan Gowdigere </Link></td>
                                         <td><Link to="Naveen Prabhakar" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Naveen Prabhakar</Link></td>
                                         <td rowSpan="2"><Link to="Arpita Mitra" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer", color: "#1a76bb" }}>Arpita Mitra</Link></td>
                                         <td rowSpan="2"><Link to="Enrico Pajer" smooth={true} duration={1000} offset={-150} style={{ cursor: "pointer" }}>Enrico Pajer</Link></td>
