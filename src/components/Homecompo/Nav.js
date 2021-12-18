@@ -19,6 +19,7 @@ function Nav(props) {
                                 <li><Link to="/Register">REGISTER</Link></li>
                                 <li><Link to="/Participants">PARTICIPANTS</Link></li>
                                 <li><Link to="/Noc">NOC</Link></li>
+                                <li><Link to="/Gallery">GALLERY</Link></li>
                                 <li><Link to="/Schedule">SCHEDULE and SPEAKERS</Link></li>
                                 <li><Link to="/Zoom">ZOOM/YOUTUBE LINKS</Link></li>
                                 <li><Link to="/Contact">CONTACT</Link></li>

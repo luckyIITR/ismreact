@@ -1123,3 +1123,13 @@ hr{
         left: 6.5em !important;
     }
 }
+/**************************/
+
+.photocontainer{
+    width: 80%;
+    margin : auto;
+}
+.mphotos{
+    width: 100%;
+    margin: 1em auto;
+}
