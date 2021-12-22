@@ -15,20 +15,20 @@ import './components/css/mainstyle.css'
 
 
 function App() {
-  return (
-    <HashRouter>
-          <Switch>
-           <Route path="/" component={Home} exact/>
-            <Route path="/Register" component={Register} exact/>
-            <Route path="/Participants" component={Participants} exact/>
-            <Route path="/Noc" component={Noc} exact/>
-            <Route path="/Schedule" component={Schedule} exact/>
-              <Route path="/Zoom" component={Zoom} exact/>
-              <Route path="/Contact" component={Contact} exact/>
-              <Route path="/Gallery" component={Gallery} exact/>
-         </Switch>
-    </HashRouter>
-);
+    return (
+        <HashRouter>
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/Register" component={Register} exact />
+                <Route path="/Participants" component={Participants} exact />
+                <Route path="/Noc" component={Noc} exact />
+                <Route path="/Schedule" component={Schedule} exact />
+                <Route path="/Zoom" component={Zoom} exact />
+                <Route path="/Contact" component={Contact} exact />
+                <Route path="/Gallery" component={Gallery} exact />
+            </Switch>
+        </HashRouter>
+    );
 }
 
 export default App;
