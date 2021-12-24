@@ -100,7 +100,7 @@ function Speakers() {
                                             return <Speaker key={index} props={value} />
                                 })}
 
-                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Short Presentations</div>
+                                <div style={{ marginTop: '2em', marginBottom: '0.5em', fontWeight: 'bold', fontSize: '1.5em' }}>Speakers of Short Presentations (15 minutes)</div>
 
                                 {// eslint-disable-next-line
                                     data.map((value, index) => {
