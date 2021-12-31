@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/logo2.png'
 import {Link} from "react-router-dom";
-import logo2 from '../images/75ylogo.jpeg'
+import logo2 from '../images/175logo.jpeg'
 
 
 function showMenu() {
